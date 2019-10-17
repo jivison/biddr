@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-content {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link, a {
+  color: #09d3ac;
+
+  &:hover {
+    color: #0bbb98;
+  }
+
+}
+
+.App-header {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    font-size: 1.4em;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .sessions {
+    display: flex;
+    flex: 0.75;
+    justify-content: space-between;
+    font-size: 1.4em;
+    
+    a {
+      &:link {
+        text-decoration: none;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.Modal {
+  font-size: 1.5em;
+  background: #282c35;
+  margin: 1vw;
+  padding: 1vw;
+  height: 91vh;
+
+  &:focus {
+    outline: #282c35 2px solid;
+  }
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3f44528c;
+}

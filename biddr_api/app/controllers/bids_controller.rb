@@ -9,10 +9,7 @@ class BidsController < ApplicationController
             user: current_user
         })
         if bid.save
-            render json: {
-                bid: bid,
-                status: 201
-            }, status: 201
+            render json: bid, status: 201
         else
             render json: {
                 errors: bid.errors.full_messages,
@@ -22,10 +19,7 @@ class BidsController < ApplicationController
     end
 
     def show
-        render json: {
-            bid: @bid,
-            status: 200
-        }, status: 200
+        render json: @bid, status: 200
     end
     
     def update

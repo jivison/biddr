@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html {
+  background: rgb(24, 24, 24);
+  color: white;
+}
+
+.highlight {
+  color: #34aa92
+}
+
+.Card {
+  background: #3b414e;
+  padding: 1em;
+  border-radius: 1.5em;
+  transition: 0.2s;
+  margin-bottom: 1em;
+
+  .Card-description {
+    font-size: 0.75em;
+  }
+
+  small {
+    font-size: 0.5em;
+  }
+
+}
+
+.Card-hover {
+  &:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    box-shadow: #454e61 5px 5px;
+    transform: translate(-5px, -5px);
+  }
+
+  &:active {
+    transform: translate(0px, 0px);
+    box-shadow: none;
+  }
+}
+
+.All-Auctions {
+
+  width: 100%;
+
+  .Card {
+    margin: 0.5em;
+    width: 28%
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DeleteButton,
+.EditButton,
+.close-button {
+  border: 2px white solid;
+  color: #34aa92;
+  background: transparent;
+  font-size: 0.7em;
+  padding: 0.5em 1.5em;
+  margin: 0.5em;
+  border-radius: 2em;
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+  }
+
+}
+
+.DeleteButton:hover,
+.close-button:hover {
+  background: rgb(250, 46, 46);
+}
+
+.EditButton:hover {
+  background: rgb(22, 136, 92);
+}
+
+.action-buttons {
+  margin-top: 0.5em;
+}
+
+.FormField {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+
+  label {
+    width: 20vw
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-left: 1em;
+    margin-top: 1em;
+    padding: 0.4em;
+    font-size: 0.7em;
+    background: transparent;
+    color: #34aa92;
+    border: 1px white solid;
+    font-family: inherit;
+  }
+}
+
+.submit-button {
+  min-width: 10vw;
+  margin-top: 1em;
+  margin-left: 1em;
+  padding: 0.4em;
+  font-size: 0.7em;
+  background: transparent;
+  color: #34aa92;
+  border: 2px white solid;
+  border-radius: 1em;
+  transition: 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    transition: 0.1s;
+    background: rgb(31, 61, 61);
+    color: white;
+  }
+
+}

@@ -39,8 +39,8 @@ module BiddrApi
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins ["localhost:2993"]
-        resource '*', headers: :any, methods: [:get, :post, :update, :delete]
+        origins ["localhost:2993", "127.0.0.1:2993"]
+        resource '*', headers: :any, methods: [:get, :post, :delete, :patch, :put, :options], credentials: true
       end
     end
 
